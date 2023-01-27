@@ -1,40 +1,73 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 
 const Header = () => {
   return (
-    <header>
-      <div className="flex flex-row items-center">
+    <header className=" sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+      <motion.div
+        initial={{
+          x: -500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex flex-row items-center"
+      >
         {/* Social Icons */}
         <SocialIcon
-          className=" hover:opacity-80 transition-all"
+          className=" hover:opacity-80 transition-all ease-in-out duration-300"
           url="https://github.com/BlazerXXI"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          className=" hover:opacity-80 transition-all"
+          className=" hover:opacity-80 transition-all ease-in-out duration-300"
           url="https://www.linkedin.com/in/ruslan-karliuk-33a988250/"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          className=" hover:opacity-80 transition-all"
+          className=" hover:opacity-80 transition-all ease-in-out duration-300"
           url="https://t.me/BlazerXXI"
           fgColor="gray"
           bgColor="transparent"
         />
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex items-center"
+      >
         <SocialIcon
           className=" 
-					cursor-pointer hover:opacity-80 transition-all"
+					cursor-pointer hover:opacity-80 transition-all ease-in-out duration-300"
           network="email"
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase">Get In Touch</p>
-      </div>
+        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          Get In Touch
+        </p>
+      </motion.div>
     </header>
   );
 };

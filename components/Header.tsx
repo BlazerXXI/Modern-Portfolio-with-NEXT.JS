@@ -24,18 +24,24 @@ const Header = () => {
         {/* Social Icons */}
         <SocialIcon
           className=" hover:opacity-80 transition-all ease-in-out duration-300"
+          target="_blank"
+          rel="noopener"
           url="https://github.com/BlazerXXI"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           className=" hover:opacity-80 transition-all ease-in-out duration-300"
+          target="_blank"
+          rel="noopener"
           url="https://www.linkedin.com/in/ruslan-karliuk-33a988250/"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           className=" hover:opacity-80 transition-all ease-in-out duration-300"
+          target="_blank"
+          rel="noopener"
           url="https://t.me/BlazerXXI"
           fgColor="gray"
           bgColor="transparent"
@@ -60,6 +66,8 @@ const Header = () => {
         <SocialIcon
           className=" 
 					cursor-pointer hover:opacity-80 transition-all ease-in-out duration-300"
+          target="_blank"
+          rel="noopener"
           network="email"
           fgColor="gray"
           bgColor="transparent"

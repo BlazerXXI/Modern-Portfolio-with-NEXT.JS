@@ -9,11 +9,15 @@ export const About = () => {
       </h3>
 
       <motion.img
-        className="w-60"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full  md:rounded-lg object-cover md:w-64 md:h-95	xl:w-[500px] xl:h-[600px]"
         initial={{
           x: -200,
+          opacity: 0,
         }}
-        whileInView={{ x: 0 }}
+        transition={{
+          duration: 1.2,
+        }}
+        whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         src="https://img001.prntscr.com/file/img001/MhBlbrY5QP601aUVtmSRGg.jpg"
       />

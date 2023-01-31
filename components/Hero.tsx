@@ -6,11 +6,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   const [text, count] = useTypewriter({
-    words: [
-      "Hi, The Name's Ruslan",
-      "Front end developer",
-      "<ButLovesToCodeMore />",
-    ],
+    words: ["Hi, The Name's Ruslan", "Front end developer", "Scroll down"],
     loop: true,
     delaySpeed: 2000,
   });

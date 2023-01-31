@@ -22,11 +22,11 @@ export const Hero = () => {
         <h1 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
         </h1>
-        <h2 className="text-5xl lg:text-6xl font-semibold px-10 min-h-[160px] my-[30px]">
-          <span className="mr-3 ">{text}</span>
+        <h2 className="text-5xl lg:text-6xl font-semibold px-10 min-h-[160px] mt-[30px]">
+          <span className="mr-3">{text}</span>
           <Cursor cursorColor="#f7ab0a" />
         </h2>
-        <div className="pt-5">
+        <div className="pt-5 mb-[50px]">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

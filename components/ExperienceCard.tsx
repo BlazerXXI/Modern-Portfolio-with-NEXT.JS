@@ -4,7 +4,7 @@ import React from "react";
 export const ExperienceCard = () => {
   return (
     <div>
-      <article className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10">
+      <article className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 md:opacity-40 transition-opacity duration-200 ease-in-out  cursor-pointer overflow-hidden">
         <img
           className=" w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-center object-cover"
           src="https://picsum.photos/200"
@@ -33,7 +33,7 @@ export const ExperienceCard = () => {
           <p className=" uppercase py-5 text-gray-300">
             Started work... - Ended...
           </p>
-          <ul className="list-disc space-y-4 mt-5 text-lg">
+          <ul className="list-disc space-y-4 ml-5 text-lg">
             <li>Sumary points</li>
             <li>Sumary points</li>
             <li>Sumary points</li>

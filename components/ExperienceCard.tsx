@@ -37,8 +37,6 @@ export const ExperienceCard = () => {
             <li>Sumary points</li>
             <li>Sumary points</li>
             <li>Sumary points</li>
-            <li>Sumary points</li>
-            <li>Sumary points</li>
           </ul>
         </div>
       </article>

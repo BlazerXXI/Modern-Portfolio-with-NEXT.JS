@@ -14,15 +14,16 @@ export const About = () => {
       </h3>
 
       <motion.img
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full  md:rounded-lg object-cover md:w-63 md:h-80	xl:w-[400px] xl:h-[500px]"
+        className="-mb-32 md:mb-0 flex-shrink-0 w-28 h-28  rounded-full md:rounded-lg object-cover md:w-63 md:h-80	xl:w-[300px] xl:h-[400px]"
         initial={{
           x: -200,
           opacity: 0,
+          y: -200,
         }}
         transition={{
-          duration: 1.2,
+          duration: 1.8,
         }}
-        whileInView={{ x: 0, opacity: 1 }}
+        whileInView={{ x: 0, opacity: 1, y: 0 }}
         viewport={{ once: true }}
         src="https://img001.prntscr.com/file/img001/DvLqzHAHTcCYO6v84vOh-Q.jpg"
       />

@@ -3,6 +3,7 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { BackgroundCircles } from "./BackgroundCircles";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   const [text, count] = useTypewriter({
@@ -11,7 +12,14 @@ export const Hero = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className=" h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      transition={{ duration: 2.2 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      className=" h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
+    >
       <BackgroundCircles />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
@@ -41,6 +49,6 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -66,6 +66,7 @@ const Header = () => {
         <SocialIcon
           className=" 
 					cursor-pointer hover:opacity-80 transition-all ease-in-out duration-300"
+					url="mailto:ruslandendik@gmail.com"
           target="_blank"
           rel="noopener"
           network="email"

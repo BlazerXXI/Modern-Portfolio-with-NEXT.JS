@@ -4,7 +4,7 @@ import React from "react";
 export const ExperienceCard = () => {
   return (
     <div>
-      <article className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 md:opacity-40 transition-opacity duration-200 ease-in-out  cursor-pointer overflow-hidden">
+      <article className=" flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[200px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 md:opacity-40 transition-opacity duration-200 ease-in-out  cursor-pointer overflow-hidden">
         <img
           className=" w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-center object-cover"
           src="https://picsum.photos/200"

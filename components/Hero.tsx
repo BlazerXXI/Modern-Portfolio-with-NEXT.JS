@@ -38,8 +38,8 @@ export const Hero = () => {
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
-          <Link href="#experince">
-            <button className="heroButton">Experince</button>
+          <Link href="#experience">
+            <button className="heroButton">Experience</button>
           </Link>
           <Link href="#skills">
             <button className="heroButton">Skills</button>

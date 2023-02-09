@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { type } from "os";
+import { easeInOut, motion } from "framer-motion";
 import React from "react";
 
 type Props = {};
@@ -7,7 +7,12 @@ type Props = {};
 export const Projects = ({}: Props) => {
   const projects = [1, 2, 3, 4, 5];
   return (
-    <div className=" h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.9 }}
+      className=" h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+    >
       <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
@@ -15,7 +20,14 @@ export const Projects = ({}: Props) => {
         {projects.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
           <div className=" mt-16 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
-            <img
+            <motion.img
+              initial={{
+                y: -300,
+                opacity: 0,
+              }}
+              transition={{ duration: 1.3, ease: easeInOut }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               className=" max-w-[200px] sm:max-w-[400px]"
               src="https://img001.prntscr.com/file/img001/Y01lTDkNSYihCulTrZgoZQ.png"
               alt=""
@@ -38,6 +50,6 @@ export const Projects = ({}: Props) => {
         ))}
       </div>
       <div className=" w-full absolute top-[30%] bg-[#f7ab0a]/10 left-0 h-[500px]  -skew-y-12"></div>
-    </div>
+    </motion.div>
   );
 };

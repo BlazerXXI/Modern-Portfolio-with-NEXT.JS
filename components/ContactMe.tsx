@@ -1,5 +1,11 @@
 import React from "react";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import {
+  PhoneIcon,
+  MapPinIcon,
+  EnvelopeIcon,
+  ChevronDoubleDownIcon,
+} from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 
 export const ContactMe = () => {
   return (
@@ -8,6 +14,15 @@ export const ContactMe = () => {
         Contact
       </h3>
       <div className=" flex flex-col space-y-10">
+        <motion.div
+          animate={{
+            y: 32,
+          }}
+          transition={{ duration: 1.3, ease: "linear", repeat: Infinity }}
+          className="flex flex-col justify-center my-2"
+        >
+          <ChevronDoubleDownIcon className="text-[#f7ab0a] h-28 w-h-28 animate-pulse" />
+        </motion.div>
         <h4 className=" text-4xl font-semibold text-center">
           I have got just what you need.
           <span className=" decoration-[#f7ab0a]/50 underline">Lets Talk.</span>

@@ -14,12 +14,25 @@ export const Projects = ({}: Props) => {
       <div className=" relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
         {projects.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
-          <div className=" w-screen flex-shrink-0 snap-center flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
-            <img src="https://picsum.photos/400/200" alt="" />
-            <div>
-              <h4>
-                Case Study {i + 1} of {projects.length}: UPS clone
+          <div className=" mt-16 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+            <img
+              className=" max-w-[200px] sm:max-w-[400px]"
+              src="https://img001.prntscr.com/file/img001/Y01lTDkNSYihCulTrZgoZQ.png"
+              alt=""
+            />
+            <div className=" space-y-10 px-0 md:px-10 max-w-6xl">
+              <h4 className=" text-4xl font-semibold text-center ">
+                <span className=" underline decoration-[#f7ab0a]/50">
+                  Case Study {i + 1} of {projects.length}
+                </span>
+                : UPS clone
               </h4>
+              <p className=" text-lg text-center md:text-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti illo aperiam reiciendis? Magni nemo non nisi, quidem
+                eius et inventore odio ea ullam molestias nihil hic velit! Quasi
+                distinctio temporibus reprehenderit delectus animi.
+              </p>
             </div>
           </div>
         ))}

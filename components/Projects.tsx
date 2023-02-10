@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import { once } from "events";
 import { easeInOut, motion } from "framer-motion";
 import React from "react";
-import css from "styled-jsx/css";
 
 type Props = {};
 
@@ -34,16 +34,15 @@ export const Projects = ({}: Props) => {
             />
             <motion.div
               initial={{
-                y: -60,
                 opacity: 0,
               }}
-              transition={{ duration: 1, ease: easeInOut }}
-              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: easeInOut }}
+              whileInView={{ opacity: 1, y: [-60, 20, 0] }}
               className=" space-y-10 px-0 md:px-10 max-w-6xl"
             >
               <h4 className=" text-4xl font-semibold text-center ">
                 <span className=" underline decoration-[#f7ab0a]/50">
-                  Case Study {i + 1} of {projects.length}
+                  Case Study {i + 1} of {projects.length}{" "}
                 </span>
                 : WebSite
               </h4>

@@ -5,7 +5,7 @@ import {
   EnvelopeIcon,
   ChevronDoubleDownIcon,
 } from "@heroicons/react/24/solid";
-import { easeInOut, easeOut, motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 export const ContactMe = () => {
   return (

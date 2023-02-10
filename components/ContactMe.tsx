@@ -5,7 +5,7 @@ import {
   EnvelopeIcon,
   ChevronDoubleDownIcon,
 } from "@heroicons/react/24/solid";
-import { motion } from "framer-motion";
+import { easeInOut, easeOut, motion } from "framer-motion";
 
 export const ContactMe = () => {
   return (
@@ -16,9 +16,9 @@ export const ContactMe = () => {
       <div className=" flex flex-col space-y-10">
         <motion.div
           animate={{
-            y: 32,
+            y: [-32, 25, -32],
           }}
-          transition={{ duration: 1.3, ease: "linear", repeat: Infinity }}
+          transition={{ duration: 1.8, ease: easeInOut, repeat: Infinity }}
           className="flex flex-col justify-center my-2"
         >
           <ChevronDoubleDownIcon className="text-[#f7ab0a] h-28 w-h-28 animate-pulse" />

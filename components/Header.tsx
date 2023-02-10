@@ -66,16 +66,19 @@ const Header = () => {
         <SocialIcon
           className=" 
 					cursor-pointer hover:opacity-80 transition-all ease-in-out duration-300"
-					url="mailto:ruslandendik@gmail.com"
+          url="mailto:ruslandendik@gmail.com"
           target="_blank"
           rel="noopener"
           network="email"
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+        <a
+          href="mailto:ruslandendik@gmail.com"
+          className="uppercase hidden md:inline-flex text-sm text-gray-400"
+        >
           Get In Touch
-        </p>
+        </a>
       </motion.div>
     </header>
   );

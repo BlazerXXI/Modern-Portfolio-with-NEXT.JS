@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { once } from "events";
 import { easeInOut, motion } from "framer-motion";
 import React from "react";
 

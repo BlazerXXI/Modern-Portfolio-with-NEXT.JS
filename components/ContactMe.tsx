@@ -49,8 +49,8 @@ export const ContactMe = () => {
             <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
             <a
               href="https://goo.gl/maps/K219nTuTQxDrwJtv6"
-              target="blank"
-              rel="noopener norefener nofollow"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
               className=" text-2xl"
             >
               123 Developer Lane

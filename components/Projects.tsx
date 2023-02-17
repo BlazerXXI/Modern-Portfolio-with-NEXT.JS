@@ -11,26 +11,33 @@ export const Projects = ({}: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.9 }}
-      className=" h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className=" h-screen  relative flex  flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
       <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className=" relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className=" relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 md:mb-[200px] scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         {projects.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
-          <div className=" mt-16 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
-            <motion.img
-              initial={{
-                y: -60,
-                opacity: 0,
-              }}
-              transition={{ duration: 1, ease: easeInOut }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className=" max-w-[200px] sm:max-w-[400px]"
-              src="https://img001.prntscr.com/file/img001/Y01lTDkNSYihCulTrZgoZQ.png"
-              alt=""
-            />
+          <div className=" mt-16 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen ">
+            <a
+              href="https://relvise-website.netlify.app/"
+              rel="noreferrer noopener nofollow"
+              target="_blank"
+            >
+              {" "}
+              <motion.img
+                initial={{
+                  y: -300,
+                  opacity: 0,
+                }}
+                transition={{ duration: 0.9, ease: easeInOut }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className=" max-w-[200px] sm:max-w-[400px]"
+                src="https://img001.prntscr.com/file/img001/Y01lTDkNSYihCulTrZgoZQ.png"
+                alt=""
+              />
+            </a>
             <motion.div
               initial={{
                 opacity: 0,
@@ -43,7 +50,14 @@ export const Projects = ({}: Props) => {
                 <span className=" underline decoration-[#f7ab0a]/50">
                   Case Study {i + 1} of {projects.length}{" "}
                 </span>
-                : WebSite
+                :{" "}
+                <a
+                  href="https://relvise-website.netlify.app/"
+                  rel="noreferrer noopener nofollow"
+                  target="_blank"
+                >
+                  WebSite
+                </a>
               </h4>
               <p className=" text-lg text-center text-[#cecece]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

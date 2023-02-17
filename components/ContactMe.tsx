@@ -6,16 +6,19 @@ import {
   ChevronDoubleDownIcon,
 } from "@heroicons/react/24/solid";
 import { easeInOut, motion } from "framer-motion";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
+
+type Inputs = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
 export const ContactMe = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (formData: any) => console.log(formData);
+  const { register, handleSubmit } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = (formData: any) =>
+    console.log(formData);
   return (
     <div className=" h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center">
       <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Header from "@/components/Header";
@@ -7,6 +8,7 @@ import { WorkExperience } from "@/components/WorkExperience";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { ContactMe } from "@/components/ContactMe";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +47,18 @@ export default function Home() {
       <section id="contact" className=" snap-start">
         <ContactMe />
       </section>
+
+      <Link href="#hero">
+        <footer className=" sticky bottom-5 w-full cursor-pointer">
+          <div className=" flex items-center justify-center">
+            <img
+              className=" h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:opacity-60 hover:border-[1px] filter grayscale hover:grayscale-0 cursor-pointer"
+              src="https://i.imgur.com/e2yvD6A.png"
+              alt=""
+            />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }

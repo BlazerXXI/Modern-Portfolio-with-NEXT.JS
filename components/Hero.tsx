@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export const Hero = () => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: ["Hi, The Name's Ruslan", "Front end developer", "Scroll down"],
     loop: true,
     delaySpeed: 2000,
@@ -22,7 +22,7 @@ export const Hero = () => {
     >
       <BackgroundCircles />
       <img
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        className=" rounded-full h-32 w-32 mx-auto object-cover"
         src="https://media.licdn.com/dms/image/D4D03AQFy1NoGplDg9w/profile-displayphoto-shrink_800_800/0/1669810661065?e=1680739200&v=beta&t=WzOYVd-X0Wfhs0ZtvYM-PwpPyHKYw5lR52R3N7VFNa8"
         alt=""
       />
@@ -34,7 +34,7 @@ export const Hero = () => {
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#f7ab0a" />
         </h2>
-        <div className="pt-5 mb-[50px]">
+        <div className="md:pt-5 mb-[50px]">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

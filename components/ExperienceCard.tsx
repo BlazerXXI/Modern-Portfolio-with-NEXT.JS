@@ -11,17 +11,17 @@ export const ExperienceCard = () => {
           alt=""
         />
         <div className=" px-0 md:px-10">
-          <h4 className=" text-4xl font-light">Software engineer</h4>
-          <p className="font-bold text-2xl mt-1">COMPANY NAME</p>
+          <h4 className=" text-4xl font-light">NO</h4>
+          <p className="font-bold text-2xl mt-1">COMPANY</p>
           <div className="flex space-x-2 my-2">
             <img
               className=" h-10 w-10 rounded-full"
-              src="https://cutewallpaper.org/24/javascript-png/the-future-is-javascript.png"
+              src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png"
               alt=""
             />
             <img
               className=" h-10 w-10 rounded-full"
-              src="https://cutewallpaper.org/24/javascript-png/the-future-is-javascript.png"
+              src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon.png"
               alt=""
             />
             <img
@@ -33,11 +33,6 @@ export const ExperienceCard = () => {
           <p className=" uppercase py-5 text-gray-300">
             Started work... - Ended...
           </p>
-          <ul className="list-disc space-y-4 ml-5 text-lg">
-            <li>Sumary points</li>
-            <li>Sumary points</li>
-            <li>Sumary points</li>
-          </ul>
         </div>
       </article>
     </div>

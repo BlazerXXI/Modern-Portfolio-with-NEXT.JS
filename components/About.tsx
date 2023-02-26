@@ -9,12 +9,12 @@ export const About = () => {
       transition={{ duration: 1.5 }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
 
       <motion.img
-        className="flex-shrink-0  w-28 h-28  rounded-full md:rounded-lg object-cover md:w-63 md:h-80	xl:w-[300px] xl:h-[400px]"
+        className="flex-shrink-0 mt-10  w-28 h-28  rounded-full md:rounded-lg object-cover md:w-80 md:h-80	xl:w-[300px] xl:h-[400px]"
         initial={{
           opacity: 0,
         }}

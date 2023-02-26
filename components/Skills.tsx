@@ -3,15 +3,21 @@ import React from "react";
 import { Skill } from "./Skill";
 type Props = {};
 export const Skills = ({}: Props) => {
+  const skillImage = [
+    "https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon.png",
+    "2",
+  ];
+
+  const skillMap = skillImage.forEach((skill) => skill);
   return (
-    <motion.div className=" h-screen flex relative flex-col text-center md:text-left min-h-screen justify-center xl:space-y-0 mx-auto items-center">
-      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <motion.div className=" h-screen flex gap-5 relative flex-col text-center md:text-left min-h-screen justify-center xl:space-y-0 mx-auto items-center">
+      <h3 className=" mt-[24px] uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills
       </h3>
-      <h3 className="absolute top-36 uppercase  tracking-[3px] text-gray-500 text-sm">
+      <h3 className=" uppercase  tracking-[3px] text-gray-500 text-sm">
         Hover over a skill for currency profieciency
       </h3>
-      <div className=" grid grid-cols-3 sm:grid-cols-5 gap-5 mt-24">
+      <div className=" grid grid-cols-3 sm:grid-cols-5 gap-5 mt-5">
         <Skill />
         <Skill />
         <Skill />

@@ -21,7 +21,7 @@ export const ContactMe = () => {
     (window.location.href = `mailto:ruslandendik@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`);
   return (
     <div className=" h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center">
-      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="  mt-24 pb-5 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
       <div className=" flex flex-col space-y-10">
@@ -99,7 +99,7 @@ export const ContactMe = () => {
           />
           <button
             type="submit"
-            className=" bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className=" bg-[#f7ab0a] py-2 px-5 md:py-5 md:px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>

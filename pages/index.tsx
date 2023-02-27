@@ -8,7 +8,7 @@ import { WorkExperience } from "@/components/WorkExperience";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { ContactMe } from "@/components/ContactMe";
-import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,17 +48,19 @@ export default function Home() {
         <ContactMe />
       </section>
 
-      <Link href="#hero">
-        <footer className=" sticky bottom-5 w-full cursor-pointer">
-          <div className=" flex items-center justify-center">
-            <img
-              className=" h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:opacity-60 hover:border-[1px] filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://i.imgur.com/e2yvD6A.png"
-              alt=""
-            />
-          </div>
-        </footer>
-      </Link>
+      <footer className=" sticky bottom-7 w-full cursor-pointer">
+        <div className=" flex items-center justify-center">
+          <a className=" flex" href="#hero">
+            <svg
+              className="flex h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:scale-90 hover:opacity-60 filter grayscale hover:grayscale-0 cursor-pointer w- fill-[#f7ab0a]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+            </svg>{" "}
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

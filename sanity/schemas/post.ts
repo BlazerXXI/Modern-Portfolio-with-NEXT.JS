@@ -1,4 +1,5 @@
-import {defineType} from 'sanity'
+import {type} from 'os'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'pageInfo',
@@ -35,26 +36,6 @@ export default defineType({
       options: {
         hotspot: true,
       },
-    },
-    {
-      name: 'phoneNumber',
-      title: 'PhoneNumber',
-      type: 'string',
-    },
-    {
-      name: 'email',
-      title: 'Email',
-      type: 'string',
-    },
-    {
-      name: 'address',
-      title: 'Address',
-      type: 'string',
-    },
-    {
-      name: 'socials',
-      title: 'socials',
-      type: 'string',
     },
   ],
 })

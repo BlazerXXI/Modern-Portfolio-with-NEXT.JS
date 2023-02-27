@@ -75,7 +75,7 @@ const Header = () => {
         />
         <a
           href="mailto:ruslandendik@gmail.com"
-          className="uppercase hidden md:inline-flex text-sm text-gray-400"
+          className="uppercase hidden md:inline-flex text-sm text-gray-400 duration-300 hover:text-[#f7ab0a]/40"
         >
           Get In Touch
         </a>

@@ -20,7 +20,7 @@ export const Projects = ({}: Props) => {
       <div className=" w-full flex overflow-x-scroll  snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         {projects.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
-          <div className=" w-screen h-screen flex-shrink-0 snap-center flex flex-row md:flex-col md:gap-5 space-y-5 items-center justify-center p-20 md:p-44 ">
+          <div className=" w-screen h-screen flex-shrink-0 snap-center flex flex-col gap-10 space-y-5 items-center   ">
             <Link
               href="https://relvise-website.netlify.app/"
               rel="noreferrer noopener nofollow"

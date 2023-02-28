@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { easeInOut, motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -11,16 +12,16 @@ export const Projects = ({}: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.9 }}
-      className=" h-screen  relative flex flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className=" h-screen  relative flex flex-col text-left  max-w-full justify-evenly mx-auto items-center z-0"
     >
       <h3 className="mt-24 pb-5 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className=" relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 md:mb-[200px] scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
+      <div className=" w-full flex overflow-x-scroll  snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
         {projects.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
-          <div className=" mt-16 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen ">
-            <a
+          <div className=" w-screen h-screen flex-shrink-0 snap-center flex flex-row md:flex-col md:gap-5 space-y-5 items-center justify-center p-20 md:p-44 ">
+            <Link
               href="https://relvise-website.netlify.app/"
               rel="noreferrer noopener nofollow"
               target="_blank"
@@ -33,17 +34,17 @@ export const Projects = ({}: Props) => {
                 }}
                 transition={{ duration: 0.9, ease: easeInOut }}
                 whileInView={{ opacity: 1, y: 30 }}
-                className=" max-w-[200px] sm:max-w-[400px]"
+                className=" bg-cover max-w-[200px] sm:max-w-[400px]"
                 src="https://img001.prntscr.com/file/img001/Y01lTDkNSYihCulTrZgoZQ.png"
                 alt=""
               />
-            </a>
+            </Link>
             <motion.div
               initial={{
                 opacity: 0,
               }}
               transition={{ duration: 0.8, ease: easeInOut }}
-              whileInView={{ opacity: 1, y: [-60, 20, 0] }}
+              whileInView={{ opacity: 1 }}
               className=" space-y-10 px-0 md:px-10 max-w-6xl"
             >
               <h4 className=" text-4xl font-semibold text-center ">

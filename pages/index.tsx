@@ -8,7 +8,6 @@ import { WorkExperience } from "@/components/WorkExperience";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { ContactMe } from "@/components/ContactMe";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const inter = Inter({ subsets: ["latin"] });
 

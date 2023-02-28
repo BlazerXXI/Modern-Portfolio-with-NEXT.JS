@@ -10,7 +10,7 @@ export const Skill = () => {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        src=""
+        src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png"
         alt=""
         className=" rounded-full border border-gray-500 object-cover w-14 h-14 sm:w-24  sm:h-24 md:w-28  md:h-28 xl:w-32 xl:h-32  transition duration-300 ease-in-out"
       />

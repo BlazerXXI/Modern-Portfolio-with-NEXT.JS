@@ -1,6 +1,18 @@
-import blockContent from './blockContent'
-import category from './category'
-import pageInfo from './pageInfo'
-import author from './author'
+import createSchema from 'part:@sanity/base/schema-creator'
 
-export const schemaTypes = [pageInfo, author, category, blockContent]
+import experience from './experience'
+import skill from './skill'
+import pageInfo from './pageInfo'
+import social from './social'
+import project from './project'
+
+export default createSchema({
+  name: 'default',
+  types: schemaTypes.concat({
+    experience: experience,
+    skill: skill,
+    pageInfo: pageInfo,
+    social: social,
+    project: project,
+  }),
+})

@@ -3,9 +3,8 @@ import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
 
-export const Projects = ({}: Props) => {
+export const Projects = () => {
   const projects = [1, 2, 3, 4, 5, 6];
   return (
     <motion.div

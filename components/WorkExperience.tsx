@@ -3,6 +3,7 @@ import React from "react";
 import { ExperienceCard } from "./ExperienceCard";
 
 export const WorkExperience = () => {
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

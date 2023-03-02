@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Skill } from "./Skill";
+import { srcLinksMap } from "./fixtures";
 
 export const Skills = () => {
   return (
@@ -12,7 +13,7 @@ export const Skills = () => {
         Hover over a skill for currency profieciency
       </h3>
       <div className=" grid grid-cols-3 sm:grid-cols-5 gap-5 mt-5">
-        <Skill />
+        <Skill key={srcLinksMap?.length} srcLinks={srcLinksMap} />
       </div>
     </motion.div>
   );

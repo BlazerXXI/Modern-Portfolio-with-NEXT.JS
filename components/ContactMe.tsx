@@ -20,8 +20,8 @@ export const ContactMe = () => {
   const onSubmit: SubmitHandler<Inputs> = (formData: any) =>
     (window.location.href = `mailto:ruslandendik@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`);
   return (
-    <div className=" h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center">
-      <h3 className="  mt-24 pb-5 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className=" relative mt-24 pt-24 h-screen flex flex-col text-center md:text-left  max-w-7xl md:justify-evenly mx-auto items-center">
+      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl">
         Contact
       </h3>
       <div className=" flex flex-col space-y-10">
@@ -30,11 +30,11 @@ export const ContactMe = () => {
             y: [-32, 25, -32],
           }}
           transition={{ duration: 1.8, ease: easeInOut, repeat: Infinity }}
-          className="flex flex-col justify-center my-2"
+          className="flex flex-col  justify-center my-2"
         >
           <ChevronDoubleDownIcon className="text-[#f7ab0a] h-28 w-h-28 animate-pulse" />
         </motion.div>
-        <h4 className="flex flex-col text-4xl font-semibold text-center ">
+        <h4 className="flex flex-col text-xl md:text-4xl font-semibold text-center ">
           I have got just what you need.
           <a
             href="mailto:ruslandendik@gmail.com"
@@ -56,21 +56,10 @@ export const ContactMe = () => {
               ruslandendik@gmail.com
             </a>
           </div>
-          <div className=" flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <a
-              href="https://goo.gl/maps/K219nTuTQxDrwJtv6"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className=" text-2xl"
-            >
-              123 Developer Lane
-            </a>
-          </div>
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className=" flex flex-col space-y-2 w-fit mx-auto"
+          className=" flex flex-col space-y-2 w-fit mx-auto max-md:hidden"
         >
           <div className=" flex space-x-2">
             <input

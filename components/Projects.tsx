@@ -3,7 +3,6 @@ import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
-
 export const Projects = () => {
   const projects = [1, 2, 3, 4, 5, 6];
   return (
@@ -13,13 +12,13 @@ export const Projects = () => {
       transition={{ duration: 1.9 }}
       className=" h-screen  relative flex flex-col text-left  max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="mt-24 pb-5 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className=" mt-24 pb-5 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className=" w-full flex overflow-x-scroll  snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
+      <div className=" w-full flex overflow-x-scroll  snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 items-center">
         {projects.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
-          <div className=" w-screen h-screen flex-shrink-0 snap-center flex flex-col gap-10 space-y-5 items-center   ">
+          <div className=" w-screen h-screen flex-shrink-0 snap-center flex flex-col gap-10 space-y-5 items-center justify-center   ">
             <Link
               href="https://relvise-website.netlify.app/"
               rel="noreferrer noopener nofollow"

@@ -50,7 +50,7 @@ export default function Home() {
         <div className=" flex items-center justify-center">
           <a className=" flex" href="#hero">
             <svg
-              className="flex mb-[24px] h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:scale-90 hover:opacity-60 filter grayscale hover:grayscale-0 cursor-pointer w- fill-[#f7ab0a]"
+              className="flex max-sm:mb-[34px] h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:scale-90 hover:opacity-60 filter grayscale hover:grayscale-0 cursor-pointer w- fill-[#f7ab0a]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >

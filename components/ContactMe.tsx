@@ -21,7 +21,7 @@ export const ContactMe = () => {
     (window.location.href = `mailto:ruslandendik@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`);
   return (
     <div className=" relative mt-24 pt-24 h-screen flex flex-col text-center md:text-left  max-w-7xl md:justify-evenly mx-auto items-center">
-      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl">
+      <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl z-20">
         Contact
       </h3>
       <div className=" flex flex-col space-y-10">
@@ -30,9 +30,9 @@ export const ContactMe = () => {
             y: [-32, 25, -32],
           }}
           transition={{ duration: 1.8, ease: easeInOut, repeat: Infinity }}
-          className="flex flex-col  justify-center my-2"
+          className="flex flex-col justify-center mt-14 items-center my-2"
         >
-          <ChevronDoubleDownIcon className="text-[#f7ab0a] h-28 w-h-28 animate-pulse" />
+          <ChevronDoubleDownIcon className="text-[#f7ab0a] w-20  animate-pulse" />
         </motion.div>
         <h4 className="flex flex-col text-xl md:text-4xl font-semibold text-center ">
           I have got just what you need.

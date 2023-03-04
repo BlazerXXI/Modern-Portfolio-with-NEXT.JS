@@ -24,7 +24,7 @@ export const ContactMe = () => {
       <h3 className=" absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl z-20">
         Contact
       </h3>
-      <div className=" flex flex-col space-y-10">
+      <div className=" flex flex-col space-y-10 ">
         <motion.div
           animate={{
             y: [-32, 25, -32],
@@ -59,7 +59,7 @@ export const ContactMe = () => {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className=" flex flex-col space-y-2 w-fit mx-auto max-md:hidden"
+          className=" flex flex-col space-y-2 w-fit mx-auto max-lg:hidden"
         >
           <div className=" flex space-x-2">
             <input
@@ -84,11 +84,11 @@ export const ContactMe = () => {
           <textarea
             {...register("message")}
             placeholder="Message"
-            className=" contactInput"
+            className=" contactInput "
           />
           <button
             type="submit"
-            className=" bg-[#f7ab0a] py-2 px-5 md:py-5 md:px-10 rounded-md text-black font-bold text-lg"
+            className=" bg-[#f7ab0a] py-2 px-5 md:py-5 md:px-10  rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>

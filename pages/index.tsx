@@ -9,7 +9,6 @@ import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { ContactMe } from "@/components/ContactMe";
 
-
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
@@ -51,7 +50,7 @@ export default function Home() {
         <div className=" flex items-center justify-center">
           <a className=" flex" href="#hero">
             <svg
-              className="flex h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:scale-90 hover:opacity-60 filter grayscale hover:grayscale-0 cursor-pointer w- fill-[#f7ab0a]"
+              className="flex mb-[24px] h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:scale-90 hover:opacity-60 filter grayscale hover:grayscale-0 cursor-pointer w- fill-[#f7ab0a]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >

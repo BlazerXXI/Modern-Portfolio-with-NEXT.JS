@@ -11,7 +11,7 @@ export const Skills = () => {
       <h3 className=" uppercase  tracking-[3px] text-gray-500 text-sm">
         Hover over a skill for currency profieciency
       </h3>
-      <div className=" grid grid-cols-3 sm:grid-cols-5 gap-5 mt-5">
+      <div className="mt-5">
         <Skill />
       </div>
     </motion.div>

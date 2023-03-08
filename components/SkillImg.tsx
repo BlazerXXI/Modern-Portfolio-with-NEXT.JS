@@ -20,10 +20,6 @@ export const SkillImg = () => {
       link: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
     },
     {
-      percent: "65%",
-      link: "https://cdn.iconscout.com/icon/free/png-256/npm-3521612-2945056.png",
-    },
-    {
       percent: "30%",
       link: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
     },

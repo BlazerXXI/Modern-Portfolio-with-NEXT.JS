@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-export const ExperienceCard = (linkExp: any) => {
+export const ExperienceCard = () => {
   let linksArr = [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png?20120221235433",
     "https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png",

@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import React from "react";
 import { ExperienceCard } from "./ExperienceCard";
 
 export const WorkExperience = () => {
-
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}

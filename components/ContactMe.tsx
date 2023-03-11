@@ -46,13 +46,20 @@ export const ContactMe = () => {
         <div className=" space-y-10">
           <div className=" flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <a href="tel:380990849108" className=" text-2xl">
+            <a
+              href="tel:380990849108"
+              className="relative flex flex-col hover:after:border-b-2 after:absolute after:bottom-0 after:w-full  hover:after:border-[#f7ab0a] text-2xl after:duration-200 hover:opacity-70 duration-200"
+            >
               +38-099-084-91-08
             </a>
           </div>
           <div className=" flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
-            <a href="mailto:ruslandendik@gmail.com" className=" text-2xl">
+            <a
+              href="mailto:ruslandendik@gmail.com"
+              className="relative flex flex-col 
+						after:absolute after:bottom-0 after:w-full hover:after:border-b-2 hover:after:border-[#f7ab0a] text-2xl after:duration-200 hover:opacity-70 duration-200"
+            >
               ruslandendik@gmail.com
             </a>
           </div>

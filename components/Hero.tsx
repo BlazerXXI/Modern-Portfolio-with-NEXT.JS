@@ -23,7 +23,7 @@ export const Hero = () => {
       <BackgroundCircles />
       <img
         className=" rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://media.licdn.com/dms/image/D4D03AQFy1NoGplDg9w/profile-displayphoto-shrink_800_800/0/1669810661065?e=1680739200&v=beta&t=WzOYVd-X0Wfhs0ZtvYM-PwpPyHKYw5lR52R3N7VFNa8"
+        src="https://media.licdn.com/dms/image/D4D03AQFy1NoGplDg9w/profile-displayphoto-shrink_800_800/0/1669810661065?e=1686182400&v=beta&t=QQcgO9dEfczfWGYgBBqfPMbeS9lSwHbt74tcMppJoSs"
         alt=""
       />
       <div className="z-20">

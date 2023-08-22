@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { BackgroundCircles } from "./BackgroundCircles";
@@ -23,9 +22,9 @@ export const Hero = () => {
 			<BackgroundCircles />
 			<div>
 				<img
-					className=" rounded-full h-32 w-32 mx-auto object-cover"
-					src="./public/avatar.jpg"
-					alt=""
+					className="rounded-full h-32 w-32 mx-auto object-cover"
+					src="https://i.work.ua/sent_photo/8/5/2/85212c142bd422054e8e56cd939de9af.jpg"
+					alt="avatar"
 				/>
 			</div>
 			<div className="z-20">

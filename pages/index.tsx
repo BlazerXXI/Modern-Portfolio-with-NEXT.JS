@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       <footer className=" sticky bottom-5 max-md:bottom-7 w-full cursor-pointer">
-        <div className=" flex items-center justify-center">
+        <div className=" flex items-center justify-end mr-5">
           <a className=" flex" href="#hero">
             <svg
               className="flex max-sm:mb-[34px] h-10 w-10 rounded-full border-[#ffffff88] duration-300 transition-all hover:scale-90 hover:opacity-60 filter grayscale hover:grayscale-0 cursor-pointer w- fill-[#f7ab0a]"
